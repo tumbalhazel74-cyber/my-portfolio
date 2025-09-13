@@ -168,6 +168,7 @@ nav ul li a {
 .btn-hire {
   color: #6c2bd9;
   background: var(--bg);
+  justify-content: center;
 }
 
 .buttons a:hover {
