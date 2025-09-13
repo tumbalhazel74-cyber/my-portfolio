@@ -258,19 +258,11 @@ section {
   text-align: center;
 }
 
-
-#contact {
-  padding: 70px 20px 100px;
-  text-align: center;
-}
-
-
 #contact h2 {
   font-size: 2rem;
   margin-bottom: 30px;
   color: white;
 }
-
 
 .contact-container {   
   display: flex;
@@ -282,18 +274,22 @@ section {
   padding: 30px; 
 }
 
+.contact-info,
+.contact-form {
+  width: 100%;        
+  max-width: 1000px;  
+  padding: 30px;      
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
 
+/* Info box */
 .contact-info {
   display: flex;
   flex-direction: column;
   gap: 20px;
   text-align: center;
-  width: 100%;        
-  max-width: 1000px;  
-  padding: 30px;      
   background: rgba(135, 206, 235, 0.8); 
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .contact-info p {
@@ -339,14 +335,9 @@ section {
   color: black;
 }
 
-
+/* Form box */
 .contact-form {
-  width: 100%;         
-  max-width: 1000px;   
   background: #fff;            
-  padding: 30px 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   text-align: left;
   color: var(--text);    
   margin-bottom: 80px;
@@ -392,6 +383,36 @@ section {
 
 .contact-form button:hover {
   background: #333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 15px; 
+    gap: 20px;
+  }
+
+  .contact-info,
+  .contact-form {
+    max-width: 100%; 
+    padding: 20px;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+    flex-direction: column; 
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .contact-info i {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .contact-form button {
+    width: 100%; 
+  }
 }
 
 
