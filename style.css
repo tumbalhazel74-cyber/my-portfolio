@@ -73,21 +73,39 @@ nav ul {
   list-style: none;
 }
 
+
 nav ul li a {
   text-decoration: none;
   color: var(--link);
   font-weight: 500;
 }
 
+
 @media (max-width: 768px) {
   nav ul {
-    flex-direction: column; 
+    display: none; 
+    flex-direction: column;
     text-align: center;
+    background: white; 
+    position: absolute;
+    top: 60px; 
+    right: 20px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   }
+
+  nav ul.active {
+    display: flex; 
+  }
+
   nav li {
     margin: 10px 0;
   }
 }
+
+
 
 .hero {
   display: flex;
