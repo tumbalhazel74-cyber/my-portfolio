@@ -19,6 +19,7 @@
   --footer-bg: #1a1a1a;
   --bg-img: url("potpay.jpg");   
   --link: #f5f5f5;
+  --nav-bg:black;
 }
 
 .hero, #about, #contact, .education, .skills-section {
@@ -71,6 +72,7 @@ nav ul {
   display: flex;
   gap: 30px;
   list-style: none;
+  background: var(--nav-bg);
 }
 
 
