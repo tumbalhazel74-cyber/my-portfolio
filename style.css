@@ -175,15 +175,6 @@ nav ul li a {
  
 }
 
-@media screen and (max-width: 768px) {
-  .btn-hire {
-    margin: 20px auto;
-    width: fit-content;
-
-  }
-  
-}
-
 .buttons a:hover {
   opacity: 0.8;
 }
