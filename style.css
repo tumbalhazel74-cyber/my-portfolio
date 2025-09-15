@@ -49,6 +49,24 @@ body {
   background-attachment: fixed;
 }
 
+.menu-toggle {
+  display: none;        
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--link);
+  background: transparent;
+  border: none;
+  z-index: 200;
+}
+
+/* show burger only on small screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+}
+
 
 header {
   width: 100%;
@@ -272,7 +290,7 @@ section {
 #contact h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: white;
+  color: var(--text);
 }
 
 .contact-container {   
